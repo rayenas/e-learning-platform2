@@ -1,0 +1,47 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar.css */
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #218ede;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 100px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .account-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .account-info span {
+    margin-right: 10px;
+  }
+  
+  .account-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  

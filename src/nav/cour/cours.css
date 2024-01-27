@@ -1,0 +1,59 @@
+/* ProfessionalDistribution.css */
+.carte-cours {
+  width: 100%;
+  height: 660px;
+  min-height: 660px;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  color:  #218ede;
+  
+  position: relative;
+  flex-direction: column;
+  
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.cours {
+    
+    padding: 0px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px); /* 33.33% width for each card with space between them */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  h2{
+    color: #218ede;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px); /* 50% width for each card on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,60 @@
+
+  .card-task {
+    width: 100%;
+    height: 660px;
+    min-height: 660px;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    color:  #218ede;
+    
+    position: relative;
+    flex-direction: column;
+    
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  .task {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns items with space between them */
+    align-items: center; /* Centers items vertically */
+  }
+  
+  .task-details {
+    flex: 1; /* Takes remaining space */
+  }
+  
+  .task-title {
+    margin-top: 0;
+  }
+  
+  .task-deadline {
+    margin-bottom: 0;
+  }
+  
+  h1, h2 {
+    margin-top: 0;
+  }
+  
+
+  

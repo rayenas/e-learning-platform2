@@ -1,0 +1,29 @@
+.upload-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+  
+  .uploaded-image {
+    margin-top: 2rem;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
