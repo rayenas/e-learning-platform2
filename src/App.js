@@ -2,6 +2,8 @@ import './App.css';
 import Navbar from './nav/Navbar';
 import Navbarl from './nav/Navbarl';
 
+
+
 function App() {
   // Define some dummy user information
   const accountInfo = {
@@ -11,9 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar accountInfo={accountInfo} />
-      {/* Assuming you also need to pass accountInfo to Navbarl */}
-      <Navbarl accountInfo={accountInfo} />
+      <Navbar />
+      <Navbarl />
     </div>
   );
 }
