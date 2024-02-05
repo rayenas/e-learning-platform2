@@ -1,47 +1,70 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 /* Navbar.css */
-
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #218ede;
-    color: white;
-  }
-  
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .search-bar {
-    flex: 1;
-    margin: 0 100px;
-  }
-  
-  .search-bar input {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .account-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .account-info span {
-    margin-right: 10px;
-  }
-  
-  .account-info img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px; /* Adjusted padding for better spacing */
+  background-color: #007bff;
+  color: white;
+}
+
+.logo {
+  font-size: 24px; /* Increased font size for better visibility */
+  font-weight: bold;
+  text-transform: uppercase; /* Optionally uppercase the logo text */
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px; /* Reduced margin for better alignment */
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none; /* Removed border for a cleaner look */
+  border-radius: 5px;
+  background-color: #f4f4f4; /* Added a light background color */
+  color: #333; /* Set text color for input */
+}
+
+.home-links {
+  margin-right: 20px; /* Adjusted margin for better alignment */
+}
+
+.home-links ul {
+  list-style: none; /* Removed bullet points from the list */
+  padding: 0;
+  margin: 0;
+}
+
+.home-links li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Adjusted margin between links */
+}
+
+.home-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); /* Set color for home links */
+  transition: color 0.3s ease; /* Smooth transition for link color change */
+}
+
+.home-links a:hover {
+  color: white;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+}
+
+.account-info span {
+  margin-right: 20px; /* Adjusted margin for better alignment */
+  font-size: 16px; /* Increased font size for better visibility */
+}
+
+.account-info img {
+  width: 40px; /* Increased image size for better visibility */
+  height: 40px;
+  border-radius: 50%;
+}

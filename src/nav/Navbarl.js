@@ -1,61 +1,31 @@
-import './Navbarl.css';
-import {BrowserRouter ,Routes ,Route} from "react-router-dom"
-import Body2 from './body2';
-import Body from './body'
-import Task from './task';
-import ProfilePage from './ProfilePage';
-import UploadTask from './carte/UploadTask ';
+// Navbar.js
+import React from 'react';
+import './Navbar.css';
 
-
-function Navbarl() {
+function Navbarl({ accountInfo }) {
+ 
   return (
-    <div className="Navbarl">
-      <div className="side-by-side">
-       <div className='Navbarl-nav'> 
-        <span />
-        <span />
-        <span />
-          <ul className="nav flex-column">
-            <li className="nav-item">
-              <a className="nav-link" href="/">الصفحة الشخصية</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/e">المواعيد</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/cour">الدروس</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/task">المهام</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/profil">حسابك</a>
-            </li>
-          </ul>
-          </div>
-          <div className='boody'>
-
-          <BrowserRouter>
-
-               <Routes>
-
-                  <Route path='/' element={<Body />} />
-                 <Route path='/cour' element={<Body2 />} />
-                 <Route path='/task' element={<Task />} />
-                 <Route path='/profil' element={<ProfilePage />} />
-                 <Route path='/task1' element={<UploadTask />} />
-                 
-
-               </Routes>
-
-          </BrowserRouter>
-
-          </div>
-          
-          </div>
-          
+    <div className="Navbar">
+      <div className="logo">Logo</div>
+      <div className="search-bar">
+        {/* Your search bar content */}
+      </div>
+      <div className="home-links">
+        <ul>
+        <li><a href="/jwadou">الصفحة الشخصية</a></li>
+        <li> <a href="/agenda-jwadou">المواعيد</a></li>
+        <li> <a href="/cour">الدروس</a></li>
+        <li><a href="/task">مهام</a></li>
+        <li><a href="/profil">حسابك</a></li>
+        </ul>
+      </div>
+      <div className="account-info">
+        <span>{accountInfo && accountInfo.name}</span>
+        <img src={accountInfo && accountInfo.photo} alt="Photo de profil" href="/"/>
+      </div>
     </div>
   );
 }
 
 export default Navbarl;
+
